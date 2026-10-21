@@ -2,13 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EasyPak</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<!-- DESTINATION: change the URL below (both lines) to move the QR code anywhere. -->
-<meta http-equiv="refresh" content="0; url=https://easypaksa.com/">
-<script>location.replace("https://easypaksa.com/");</script>
-<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;background:#fff;color:#48586A}a{color:#98C848}</style>
+<meta name="description" content="EasyPak Packaging Materials — website, Instagram and Facebook.">
+<meta name="theme-color" content="#48586A">
+<link rel="icon" href="logo.png">
+<style>
+  :root{--blue:#48586A;--green:#98C848;--ink:#1f2933;--bg:#f4f6f8;--card:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);
+       min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+       padding:32px 20px;padding-bottom:max(32px,env(safe-area-inset-bottom))}
+  main{width:100%;max-width:380px;text-align:center}
+  .logo{width:220px;max-width:70%;height:auto;display:block;margin:0 auto 10px}
+  p.tag{margin:0 0 28px;color:var(--blue);font-size:15px;letter-spacing:.02em}
+  a.btn{display:flex;align-items:center;gap:14px;width:100%;padding:16px 18px;margin:0 0 14px;border-radius:14px;
+        background:var(--card);color:var(--ink);text-decoration:none;font-size:17px;font-weight:600;
+        box-shadow:0 1px 2px rgba(31,41,51,.06),0 6px 18px rgba(72,88,106,.10);
+        transition:transform .12s ease,box-shadow .12s ease}
+  a.btn:active{transform:scale(.985)}
+  a.btn svg{width:26px;height:26px;flex:none}
+  a.btn span{flex:1;text-align:left}
+  a.btn small{font-weight:400;color:#6b7785;font-size:13px}
+  a.btn.site{background:var(--blue);color:#fff}
+  a.btn.site small{color:#cfd7e0}
+  a.btn.ig svg{color:#d6336c}
+  a.btn.fb svg{color:#1877f2}
+  footer{margin-top:26px;font-size:13px;color:#6b7785}
+  footer a{color:var(--blue);text-decoration:none}
+  footer .dot{color:var(--green);margin:0 6px}
+</style>
 </head>
-<body><p>Redirecting… <a href="https://easypaksa.com/">Continue to EasyPak</a></p></body>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="EasyPak Packaging Materials" width="301" height="91">
+  <p class="tag">Packaging Materials · Saudi Arabia</p>
+
+  <a class="btn site" href="https://easypaksa.com/">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+    <span>Visit our website<br><small>easypaksa.com</small></span>
+  </a>
+
+  <a class="btn ig" href="https://www.instagram.com/easypak_sa/">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+    <span>Instagram<br><small>@easypak_sa</small></span>
+  </a>
+
+  <a class="btn fb" href="https://www.facebook.com/people/Easypak/61561414935207/">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.4H7.4V14h2.8v8h3.3z"/></svg>
+    <span>Facebook<br><small>EasyPak</small></span>
+  </a>
+
+  <footer>
+    <a href="tel:+966508428883">+966 50 842 8883</a><span class="dot">•</span><a href="mailto:info@easypaksa.com">info@easypaksa.com</a>
+  </footer>
+</main>
+</body>
 </html>
